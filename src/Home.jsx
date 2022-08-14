@@ -5,12 +5,16 @@ function Home() {
 
     const navigate = useNavigate()
     return (
-      <div className="App m-5 p-5">
+      <div className="App m-5 p-15">
+        <h4> Home Page</h4>
         <div class="btn-group" >
         <Link type="button" class="btn btn-primary" to='/register'>Register</Link>
+        </div>
+        <br/>
+        <br/>
+        <div class="btn-group" >
         <Link type="button" class="btn btn-primary" to='/login'>Login</Link>
-    </div>
-      </div>
+      </div></div>
     );
   }
 

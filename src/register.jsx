@@ -41,8 +41,9 @@ function Register() {
         registerA(body);
     }
 
-    return ( <div className="m-5 p-5">
-    
+    return ( 
+    <div className="m-5 p-5">
+    <h3>Registration Form</h3>
     <div class="input-group mb-3">
   <span class="input-group-text" id="basic-addon1">First Name</span>
   <input type="text" class="form-control" placeholder="FirstName" onChange={e => setFirstName(e.target.value)}/>
@@ -73,10 +74,10 @@ function Register() {
   <input type="text" class="form-control" placeholder="Gender" onChange={e =>setGender(e.target.value)} />
 </div>
 
-<button type="button" class="btn btn-secondary" onClick={registerUser}>Submit</button>
+<button type="button" class="btn btn-primary" onClick={registerUser}>Submit</button>
 
 {correct && <div className="alert alert-success" role="alert">
-Registered ---- {pass} ---- {uid}
+Registered ----Userid :{uid}----Password :{pass}
 </div>
   }  
 {wrong &&

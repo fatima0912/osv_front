@@ -17,10 +17,10 @@ import {useState, useEffect} from "react"
             console.log(res.data)
         })
     }
-
-    // {products.map(item => <ProductItem key={item.id} product={item} />)}
-     return ( <>
+     return ( 
+     <>
         <div className="p-5 m-5">
+            <h4>Registered Users</h4>
         <ul class="list-group">
         {data && data.map((item , i) => <li class="list-group-item">{i + 1} | {item.firstName} {item.lastName} | {item.mobile}</li> )}
 
@@ -31,4 +31,4 @@ import {useState, useEffect} from "react"
  }
 
 
-export default UserList
+export default UserList;
